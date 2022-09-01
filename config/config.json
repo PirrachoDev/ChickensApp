@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "chickensapp2",
+    "host": "chickensapp2",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "chickensapp2",
+    "host": "chickensapp2",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "chickensapp2",
+    "host": "chickensapp2",
+    "dialect": "sqlite"
+  }
+}

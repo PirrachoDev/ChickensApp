@@ -1,0 +1,65 @@
+<% layout('./layouts/boilerplate')%>
+  
+<div class="row">
+  <h1 class="text-center">Add new Chicken</h1>
+  <div class="col-md-6 offset-md-3">
+  <form action="/chickens" method="POST" class="validated-form" novalidate>
+  <div class="mb-3">
+    <label for="name">Name: </label><br>
+  <input type="text" name="chicken[name]" id="name" class="form-control" required><br>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please make sure you enter a name for this chicken.
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="breed">Breed: </label><br>
+  <input type="text" name="chicken[breed]" id="breed" class="form-control" required><br>
+<div class="valid-feedback">
+                    Looks good!
+                </div>
+    <div class="invalid-feedback">
+      Please enter the breed of this chicken.
+    </div>
+  </div>
+  
+  <div class="mb-3">
+    <label for="weight">Weight: </label><br>
+  <input type="text" name="chicken[weight]" id="weight" class="form-control" required><br>
+<div class="valid-feedback">
+                    Looks good!
+                </div>
+    <div class="invalid-feedback">
+      Please enter the chicken's weight.
+    </div>
+  </div>
+    <div class="mb-3">
+      <label for="imgUrl">Image Url: </label><br>
+      <input type="text" name="chicken[imgUrl]" id="imgUrl" class="form-control" required>
+      <div class="valid-feedback">
+                    Looks good!
+      </div>
+      <div class="invalid-feedback">
+      Please enter the image url for this chicken.
+    </div>
+      
+    </div>
+  
+    <div class="mb-3">
+      <label for="birthday">Birthday: </label><br>
+      <input type="text" name="chicken[birthday]" id="birthday" class="form-control" required>
+      <div class="valid-feedback">
+                    Looks good!
+      </div>
+      <div class="invalid-feedback">
+      Enter the chicken's birthdate, please.
+    </div>
+    </div>
+    
+  
+  <button class="btn btn-primary mb-2">Save</button>
+</form>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+Revisar porque la DB conecta 2 veces y corregirlo
+Ya quite el script de conexion del app.js y muestra que conecta
+
+Me quede elaborando un metodo de borrar toda la tabla
+https://sebhastian.com/sequelize-delete/
+
+para modificar existing tables
+https://stackoverflow.com/questions/46357533/how-to-add-delete-new-columns-in-sequelize-cli

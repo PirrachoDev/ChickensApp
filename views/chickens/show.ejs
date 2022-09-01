@@ -1,0 +1,21 @@
+<% layout('./layouts/boilerplate')%>
+  <h1>Chicken info</h1>
+
+  <div>
+  <p>
+    <div>
+      <img src="<%=chicken.imgUrl%>" alt="<%=chicken.name%>">
+    </div>
+    Name: <%=chicken.name%><br>
+    Breed: <%=chicken.breed%><br>
+    Weight: <%=chicken.weight%><br>
+    Birthday: <%=chicken.birthday%><br>
+  </p>
+  </div>
+      <div class="container d-flex">
+          <a class="btn btn-primary m-2" href="/chickens/<%=chicken.id%>/edit">Edit</a>
+          <form action="/chickens/<%=chicken.id%>?_method=DELETE" method="POST">     
+          <button class="btn btn-danger m-2">Delete</button>
+          </form>
+        </div>
+  <a href="/chickens">Back to all chickens</a>
